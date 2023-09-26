@@ -18,7 +18,7 @@ public class PemilihanPercobaan319 {
             case '+':
                 hasil = angka1 + angka2;
                 System.out.println(angka1 + " + " + angka2 + "=" + hasil);
-                break;
+                
             case '-':
                 hasil = angka1 - angka2;
                 System.out.println(angka1 + " - " + angka2 + "=" + hasil);
@@ -31,6 +31,7 @@ public class PemilihanPercobaan319 {
                 hasil = angka1 / angka2;
                 System.out.println(angka1 + " / " + angka2 + "=" + hasil);
                 break;
+            default:
         }
 
 
