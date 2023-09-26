@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class PemilihanPercobaan120 {
+public class PemilihanPercobaan119 {
     public static void main(String[] args) {
-        Scanner input20 = new Scanner(System.in);
+        Scanner input19 = new Scanner(System.in);
         System.out.print("Masukkan angka:  ");
-        int angka = input20.nextInt();
+        int angka = input19.nextInt();
         String status = (angka % 2 == 0) ? "genap" : "ganjil";
         System.out.println("Angka " + angka + " bilangan " + status);
           
