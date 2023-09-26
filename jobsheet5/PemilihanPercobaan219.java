@@ -25,7 +25,7 @@ public class PemilihanPercobaan219 {
             System.out.println("Nilai akhir " +total+ " sehingga " +message);
             System.out.println("Nilai huruf = B (Lebih dari baik)");
         }else if (total>60&&total>=73){
-            System.out.println("Nilai akhir " +total+ " sehingga " +message);
+            System.out.println("Nilai akhir " +total+ " sehingga " +message);Z
             System.out.println("Nilai huruf = B (Baik)");
         }else if (total>60&&total>= 65){
             System.out.println("Nilai akhir " +total+ " sehingga " +message);
