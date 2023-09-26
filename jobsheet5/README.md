@@ -1,1 +1,0 @@
-apapun penting jobsheet
