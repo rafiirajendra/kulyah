@@ -1,2 +1,1 @@
-# kulyah
-Bismillah lancar
+# Bismillah
