@@ -41,6 +41,4 @@ public class PemilihanPercobaan219 {
             System.out.println("Nilai huruf = E (Gagal)");
         }
     }
-
-    
 }

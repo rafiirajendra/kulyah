@@ -33,12 +33,5 @@ public class PemilihanPercobaan319 {
                 break;
             default:
         }
-
-
-
-
-
-    }
-
-    
+    }  
 }

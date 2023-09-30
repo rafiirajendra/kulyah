@@ -9,6 +9,4 @@ public class PemilihanPercobaan119 {
         System.out.println("Angka " + angka + " bilangan " + status);
           
     }
-
-    
 }
