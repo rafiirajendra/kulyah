@@ -11,6 +11,5 @@ public class Lingkaran20 {
         luas= phi*r*r;
         System.out.println(keliling);
         System.out.println(luas);
-    }
-    
+    }   
 }

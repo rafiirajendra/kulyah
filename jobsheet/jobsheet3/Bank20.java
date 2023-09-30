@@ -12,5 +12,6 @@ public class Bank20 {
         bunga= lama_menabung*prosentase_bunga*jml_tabungan_awal;
         jml_tabungan_akhir=bunga+jml_tabungan_awal;
         System.out.println("Jumlah tabungan akhir anda adalah " +jml_tabungan_akhir);
+        input.close();
     }
 }

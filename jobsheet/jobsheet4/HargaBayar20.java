@@ -23,7 +23,5 @@ public class HargaBayar20 {
 
         System.out.println("Diskon yang anda dapatkan adalah " +jmlDis);
         System.out.println("Jumlah yang harus dibayar adalah " +bayar);
-
     }
-    
 }

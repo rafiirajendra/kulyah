@@ -15,6 +15,5 @@ public class ContohTipeData20 {
         System.out.println("berat\t\t\t\t\t\t\t\t:" + (float) berat);
         System.out.println("Saldo\t\t\t\t\t\t\t\t:" + saldo);
         System.out.println("Angka desimal\t\t\t\t\t\t:" + angkaDesimal);
-        
     }
 }

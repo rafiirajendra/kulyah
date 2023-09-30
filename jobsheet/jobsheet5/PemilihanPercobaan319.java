@@ -14,7 +14,7 @@ public class PemilihanPercobaan319 {
         System.out.print("Masukkan operator (+ - * /): ");
         operator = input19.next().charAt(0);
 
-        switch (operator) {
+        switch (operator) { 
             case '+':
                 hasil = angka1 + angka2;
                 System.out.println(angka1 + " + " + angka2 + "=" + hasil);
