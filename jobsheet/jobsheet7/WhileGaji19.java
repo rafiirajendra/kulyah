@@ -15,9 +15,9 @@ public class WhileGaji19 {
 
         while (i < jumlahKaryawan) {
             System.out.println("Pilihan jabatan - Direktur, Manajer, Karyawan");
-            System.out.println("Masukkan jabatan karyawan ke-" + (i+1) + ": ");
+            System.out.print("Masukkan jabatan karyawan ke-" + (i+1) + ": ");
             jabtan = scan.next();
-            System.out.println("Masukkan jumlah jam lembur");
+            System.out.print("Masukkan jumlah jam lembur: ");
             jumlahJamLembur = scan.nextInt();
             i++;
 
