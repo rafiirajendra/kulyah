@@ -22,7 +22,7 @@ public class WhileGaji19 {
             i++;
 
             if (jabtan.equalsIgnoreCase("direktur")) {
-                continue;   
+                continue;
             } else if (jabtan.equalsIgnoreCase("manajer")) {
                 gajiLembur = jumlahJamLembur * 100000;
             } 
