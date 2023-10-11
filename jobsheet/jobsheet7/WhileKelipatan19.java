@@ -11,12 +11,11 @@ public class WhileKelipatan19 {
 
         int i = 1;
         while (i <= 50) {
-            i++;
             if (i % kelipatan == 0){
                 jumlah += i;
                 counter++;
             }
-            
+            i++;
         }
         double rataRata = (double) jumlah / counter;
 
