@@ -16,6 +16,9 @@ public class Tugas3 {
                 if (i  == 1 || i == N || j == 1 || j == N) {
                     System.out.print(N + " ");
                 } else {
+                    if (N >= 10) {
+                        System.out.print(" ");
+                    }
                     System.out.print("  ");
                 }
             }
