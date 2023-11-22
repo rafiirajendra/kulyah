@@ -44,7 +44,6 @@ public class Tugas3 {
         sc.close(); 
     }
     
-
     public static void tampilkanNilaiMahasiswa() {
         System.out.println("Rekap nilai mahasiswa dari minggu pertama hingga ketujuh:");
         for (int i = 0; i < namaMahasiswa.length; i++) {
@@ -66,7 +65,6 @@ public class Tugas3 {
             }
             nilaiTotalPerHari[j] = totalHari;
         }
-
         int hariNilaiTertinggi = 0;
         int nilaiTertinggi = nilaiTotalPerHari[0];
 
@@ -76,7 +74,6 @@ public class Tugas3 {
                 hariNilaiTertinggi = j;
             }
         }
-
         return hariNilaiTertinggi + 1;
     }
 
@@ -92,7 +89,6 @@ public class Tugas3 {
                 mahasiswaTertinggi = i;
             }
         }
-
         System.out.println("Mahasiswa " + namaMahasiswa[mahasiswaTertinggi] + " dengan nilai " + nilaiTertinggi + " pada minggu ke-" + hariNilaiTertinggi);
     }
 }
