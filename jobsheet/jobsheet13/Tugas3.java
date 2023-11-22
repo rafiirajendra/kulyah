@@ -2,7 +2,7 @@ package jobsheet13;
 
 import java.util.Scanner;
 
-public class Tugas2 {
+public class Tugas3 {
     public static Scanner scanner = new Scanner(System.in);
     public static int[][] nilaiMahasiswa;
     public static String[] namaMahasiswa;
@@ -16,28 +16,40 @@ public class Tugas2 {
     }
     
     public static void inputDataMahasiswa() {
-        namaMahasiswa = new String[5];
+        Scanner sc = new Scanner(System.in);
     
-        for (int i = 0; i < 5; i++) {
+        System.out.print("Masukkan jumlah Mahasiswa: ");
+        int jumlahMahasiswa = sc.nextInt();
+        System.out.print("Masukkan jumlah Tugas: ");
+        int jumlahTugas = sc.nextInt();
+    
+        sc.nextLine(); // Membersihkan karakter newline setelah nextInt() sebelum memasukkan string.
+    
+        namaMahasiswa = new String[jumlahMahasiswa];
+        nilaiMahasiswa = new int[jumlahMahasiswa][jumlahTugas];
+    
+        for (int i = 0; i < jumlahMahasiswa; i++) {
             System.out.print("Masukkan nama mahasiswa ke-" + (i + 1) + ": ");
-            namaMahasiswa[i] = scanner.nextLine();
+            namaMahasiswa[i] = sc.nextLine();
         }
-        nilaiMahasiswa = new int[5][7]; // 5 mahasiswa, 7 minggu
-
-        for (int i = 0; i < 5; i++) {
+    
+        for (int i = 0; i < jumlahMahasiswa; i++) {
             System.out.println("Masukkan nilai mahasiswa " + namaMahasiswa[i] + ":");
-            for (int j = 0; j < 7; j++) {
-                System.out.print("Minggu ke-" + (j + 1) + ": ");
-                nilaiMahasiswa[i][j] = scanner.nextInt();
+            for (int j = 0; j < jumlahTugas; j++) {
+                System.out.print("Tugas ke-" + (j + 1) + ": ");
+                nilaiMahasiswa[i][j] = sc.nextInt();
             }
+            sc.nextLine(); // Membersihkan karakter newline setelah nextInt().
         }
+        sc.close(); 
     }
+    
 
     public static void tampilkanNilaiMahasiswa() {
         System.out.println("Rekap nilai mahasiswa dari minggu pertama hingga ketujuh:");
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < namaMahasiswa.length; i++) {
             System.out.print("Mahasiswa " + namaMahasiswa[i] + ": ");
-            for (int j = 0; j < 7; j++) {
+            for (int j = 0; j < nilaiMahasiswa[i].length; j++) {
                 System.out.print(nilaiMahasiswa[i][j] + " ");
             }
             System.out.println();
@@ -45,11 +57,11 @@ public class Tugas2 {
     }
 
     public static int cariHariNilaiTertinggi() {
-        int[] nilaiTotalPerHari = new int[7];
+        int[] nilaiTotalPerHari = new int[nilaiMahasiswa[0].length];
 
-        for (int j = 0; j < 7; j++) {
+        for (int j = 0; j < nilaiMahasiswa[0].length; j++) {
             int totalHari = 0;
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < namaMahasiswa.length; i++) {
                 totalHari += nilaiMahasiswa[i][j];
             }
             nilaiTotalPerHari[j] = totalHari;
@@ -58,7 +70,7 @@ public class Tugas2 {
         int hariNilaiTertinggi = 0;
         int nilaiTertinggi = nilaiTotalPerHari[0];
 
-        for (int j = 1; j < 7; j++) {
+        for (int j = 1; j < nilaiMahasiswa[0].length; j++) {
             if (nilaiTotalPerHari[j] > nilaiTertinggi) {
                 nilaiTertinggi = nilaiTotalPerHari[j];
                 hariNilaiTertinggi = j;
@@ -74,7 +86,7 @@ public class Tugas2 {
         int nilaiTertinggi = -1;
         int mahasiswaTertinggi = -1;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < namaMahasiswa.length; i++) {
             if (nilaiMahasiswa[i][hariNilaiTertinggi - 1] > nilaiTertinggi) {
                 nilaiTertinggi = nilaiMahasiswa[i][hariNilaiTertinggi - 1];
                 mahasiswaTertinggi = i;
