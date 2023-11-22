@@ -14,7 +14,7 @@ public class Kubus19 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int s ,L , V;
-        System.out.println("Masukkan panjang sisi kubus");
+        System.out.println("Masukkan panjang sisi kubus:");
         s = input.nextInt();
 
         V = hitungVolume(s);
