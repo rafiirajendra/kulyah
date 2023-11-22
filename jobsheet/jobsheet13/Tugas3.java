@@ -11,7 +11,7 @@ public class Tugas3 {
         inputDataMahasiswa();
         tampilkanNilaiMahasiswa();
         int hariNilaiTertinggi = cariHariNilaiTertinggi();
-        System.out.println("Nilai tertinggi ditemukan pada hari ke-" + hariNilaiTertinggi);
+        System.out.println("Nilai tertinggi ditemukan pada tugas ke-" + hariNilaiTertinggi);
         tampilkanMahasiswaNilaiTertinggi();
     }
     
@@ -45,7 +45,7 @@ public class Tugas3 {
     }
     
     public static void tampilkanNilaiMahasiswa() {
-        System.out.println("Rekap nilai mahasiswa dari minggu pertama hingga ketujuh:");
+        System.out.println("Rekap nilai mahasiswa:");
         for (int i = 0; i < namaMahasiswa.length; i++) {
             System.out.print("Mahasiswa " + namaMahasiswa[i] + ": ");
             for (int j = 0; j < nilaiMahasiswa[i].length; j++) {
@@ -79,7 +79,7 @@ public class Tugas3 {
 
     public static void tampilkanMahasiswaNilaiTertinggi() {
         int hariNilaiTertinggi = cariHariNilaiTertinggi();
-        System.out.println("Mahasiswa dengan nilai tertinggi pada hari ke-" + hariNilaiTertinggi + ":");
+        System.out.println("Mahasiswa dengan nilai tertinggi pada tugas ke-" + hariNilaiTertinggi + ":");
         int nilaiTertinggi = -1;
         int mahasiswaTertinggi = -1;
 
@@ -89,6 +89,6 @@ public class Tugas3 {
                 mahasiswaTertinggi = i;
             }
         }
-        System.out.println("Mahasiswa " + namaMahasiswa[mahasiswaTertinggi] + " dengan nilai " + nilaiTertinggi + " pada minggu ke-" + hariNilaiTertinggi);
+        System.out.println("Mahasiswa " + namaMahasiswa[mahasiswaTertinggi] + " dengan nilai " + nilaiTertinggi + " pada tugas ke-" + hariNilaiTertinggi);
     }
 }
