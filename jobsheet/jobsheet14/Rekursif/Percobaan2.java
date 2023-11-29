@@ -8,7 +8,7 @@ public class Percobaan2 {
             return (1);
         } else {
             if (y == 1) {
-                System.out.print(x + " = ");
+                System.out.print(x + " x 1" +" = ");
             } else {
                 System.out.print(x + " x ");
             }

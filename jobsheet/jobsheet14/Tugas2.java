@@ -1,5 +1,7 @@
 package jobsheet14;
 
+import java.util.Scanner;
+
 public class Tugas2 {
     public static int penjumlahanRekursif(int n) {
         if (n <= 1) {
@@ -13,7 +15,9 @@ public class Tugas2 {
     }
 
     public static void main(String[] args) {
-        int f = 8;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan bilangan yang ingin di hitung: ");
+        int f = sc.nextInt();
         System.out.println("Hasil penjumlahan dari 1 sampai " + f + " adalah : ");
         int hasil = penjumlahanRekursif(f);
         System.out.print(" = " + hasil);
